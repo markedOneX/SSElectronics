@@ -9,6 +9,7 @@
   font-family: "Outfit", sans-serif;
 }
 .hero {
+  position: relative;
   display: block;
   box-sizing: border-box;
   height: 500px;
@@ -23,16 +24,40 @@
   flex-direction: column;
   height: 100vh;
 }
-h1 {
+#title {
   color: white;
-  font-size: 5rem;
+  font-size: 4rem;
+  cursor: default;
 }
-h3 {
+#tagline {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: lighter;
+  cursor: default;
 }
 .firstLetter {
   color: rgb(4, 83, 15);
   opacity: 0.8;
+}
+a {
+  display: inline-block;
+  position: relative;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
