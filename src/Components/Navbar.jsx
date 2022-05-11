@@ -5,9 +5,7 @@ function Navbar() {
     <div>
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            S S E
-          </a>
+          <a class="navbar-brand">S S E</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -22,17 +20,17 @@ function Navbar() {
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav ms-auto">
               <li>
-                <a class="nav-link" aria-current="page" href="#">
+                <a class="nav-link" aria-current="page" href="#about">
                   About Us
                 </a>
               </li>
               <li>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#services">
                   Services
                 </a>
               </li>
               <li>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#contact">
                   Contact
                 </a>
               </li>

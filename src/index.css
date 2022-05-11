@@ -39,12 +39,12 @@
   color: rgb(4, 83, 15);
   opacity: 0.8;
 }
-a {
+.nav-link {
   display: inline-block;
   position: relative;
 }
 
-a:after {
+.nav-link:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -57,7 +57,7 @@ a:after {
   transition: transform 0.25s ease-out;
 }
 
-a:hover:after {
+.nav-link:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -67,4 +67,7 @@ a:hover:after {
   width: 100%;
   z-index: 1000000;
   top: 0;
+}
+.navbar-brand {
+  cursor: default;
 }
