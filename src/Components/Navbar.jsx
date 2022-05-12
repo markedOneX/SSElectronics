@@ -23,11 +23,6 @@ function Navbar() {
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav ms-auto">
               <li>
-                <Link to="/about" class="nav-link">
-                  About Us
-                </Link>
-              </li>
-              <li>
                 <Link to="/services" class="nav-link">
                   Services
                 </Link>
