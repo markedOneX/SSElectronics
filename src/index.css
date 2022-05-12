@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Montserrat:wght@200&family=Outfit:wght@300&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
+html,
+body {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   font-family: "Dongle", sans-serif;
   font-family: "Montserrat", sans-serif;
   font-family: "Outfit", sans-serif;
 }
+/* --------------HERO------------------ */
 .hero {
-  position: relative;
-  display: block;
   box-sizing: border-box;
   height: 500px;
   background-color: #32e32c;
-  clip-path: ellipse(87% 100% at 78.86% 0%);
+  clip-path: ellipse(92% 100% at 78.86% 0%);
 }
 
 .content {
@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 }
 #title {
   color: white;
@@ -39,11 +39,16 @@
   color: rgb(4, 83, 15);
   opacity: 0.8;
 }
+
+/* ----------Navbar--------------- */
+
+.navbar-brand {
+  cursor: pointer;
+}
 .nav-link {
   display: inline-block;
   position: relative;
 }
-
 .nav-link:after {
   content: "";
   position: absolute;
@@ -56,18 +61,31 @@
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-
 .nav-link:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-.navbar {
-  position: fixed;
-  width: 100%;
-  z-index: 1000000;
-  top: 0;
+.trial {
+  display: flex;
+  flex-direction: column;
 }
-.navbar-brand {
-  cursor: pointer;
+
+#contact,
+#services,
+.box {
+  padding-top: 3.5rem;
+}
+
+.formBox {
+  background-color: rgb(177, 177, 177);
+  border: 2px solid red;
+  padding: 2rem;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }

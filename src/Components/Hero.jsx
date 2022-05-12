@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
+import About from "./About";
 
 function Hero() {
   return (
-    <>
-      <Navbar />
+    <div className="box">
       <div className="hero">
         <div className="content">
           <h1 id="title">
@@ -17,7 +17,10 @@ function Hero() {
           </h3>
         </div>
       </div>
-    </>
+      <div className="container">
+        <About />
+      </div>
+    </div>
   );
 }
 
