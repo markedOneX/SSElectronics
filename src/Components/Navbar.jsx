@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <Link to="/" class="navbar-brand">
+      <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div className="container-fluid">
+          <Link to="/" className="navbar-brand">
             S S E
           </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
@@ -18,17 +18,17 @@ function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul class="navbar-nav ms-auto">
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul className="navbar-nav ms-auto">
               <li>
-                <Link to="/services" class="nav-link">
+                <Link to="/services" className="nav-link">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/contact" class="nav-link">
+                <Link to="/contact" className="nav-link">
                   Contact
                 </Link>
               </li>
