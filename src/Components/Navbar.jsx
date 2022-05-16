@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../Design/logo.png";
 
 function Navbar() {
   return (
@@ -7,7 +8,12 @@ function Navbar() {
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
           <Link to="/" hre className="navbar-brand">
-            <img src="./Design/bg.png" alt="Image should be here" />
+            <img
+              className=".logo"
+              src={logo}
+              alt="S S E"
+              style={{ width: "200px", height: "fit-content" }}
+            />
           </Link>
           <button
             className="navbar-toggler"
