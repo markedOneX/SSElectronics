@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <div>
-      <footer className="bg-dark">
+      <footer className="footer bg-dark">
         <div
           className="text-center p-2 text-white"
           style={{ backgroundColor: "rgb(0,0,0,0.2)" }}

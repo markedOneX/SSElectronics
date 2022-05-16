@@ -6,8 +6,8 @@ function Navbar() {
     <>
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
-          <Link to="/" className="navbar-brand">
-            S S E
+          <Link to="/" hre className="navbar-brand">
+            <img src="./Design/bg.png" alt="Image should be here" />
           </Link>
           <button
             className="navbar-toggler"

@@ -23,6 +23,7 @@ function Services() {
         tenetur provident, cumque tempora facilis similique. Ipsum fugit
         distinctio commodi asperiores dignissimos aperiam ut incidunt?
       </p>
+      <div class="blank"></div>
     </div>
   );
 }

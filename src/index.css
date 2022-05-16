@@ -13,9 +13,10 @@ body {
 /* #1ce026 */
 /* --------------HERO------------------ */
 .hero {
+  position: relative;
   box-sizing: border-box;
   height: 500px;
-  background-color: #1ce02673;
+  background-color: #20ff2b42;
   /* #32e32c */
   clip-path: ellipse(92% 100% at 78.86% 0%);
 }
@@ -102,6 +103,9 @@ h3 {
 .box {
   padding-top: 3.5rem;
 }
+.box {
+  filter: drop-shadow(0 0 0.75rem rgba(57, 247, 40, 0.637));
+}
 /* ---------------FORM-------------- */
 .formBox {
   width: 50%;
@@ -143,4 +147,11 @@ input[type="number"]::-webkit-outer-spin-button {
   -moz-appearance: none;
   appearance: none;
   margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }

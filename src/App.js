@@ -7,9 +7,8 @@ import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <div className="App d-flex flex-column min-vh-100">
+    <div className="App">
       <Navbar />
-
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/services" element={<Services />} />
