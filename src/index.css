@@ -166,7 +166,6 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 200px;
   height: 200px;
   object-fit: contain;
-  position: relative;
 }
 .cardbox {
   padding: 50px;
@@ -184,6 +183,7 @@ input[type="number"]::-webkit-outer-spin-button {
   background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
   margin-top: 3rem;
   padding: 30px;
+  border-radius: 10px;
   box-shadow: inset 8px 10px 8px rgba(0, 0, 0, 0.6);
 }
 .phone h2 {
@@ -192,9 +192,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 10px;
 }
 .phone h3 {
-  color: black;
-  font-weight: bolder;
-}
-.contact {
-  justify-content: space-between;
+  color: rgb(0, 0, 0);
+  font-size: 27px;
+  font-weight: lighter;
 }

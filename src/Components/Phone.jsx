@@ -7,10 +7,10 @@ function Phone() {
       <div className="d-flex justify-content-center">
         <div className="row">
           <div className="col-sm-6">
-            <h3>+91 9423268948</h3>
+            <h3>+919423268948</h3>
           </div>
           <div className="col-sm-6">
-            <h3>+91 9405266316</h3>
+            <h3>+919405266316</h3>
           </div>
         </div>
       </div>
