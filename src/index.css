@@ -16,7 +16,14 @@ body {
   position: relative;
   box-sizing: border-box;
   height: 500px;
-  background-color: #20ff2b42;
+  background: rgb(95, 235, 12);
+  background: linear-gradient(
+    146deg,
+    rgba(95, 235, 12, 1) 0%,
+    rgba(151, 242, 100, 1) 10%,
+    rgba(255, 255, 255, 1) 91%,
+    rgba(255, 255, 255, 1) 100%
+  );
   /* #32e32c */
   clip-path: ellipse(92% 100% at 78.86% 0%);
 }
@@ -29,16 +36,18 @@ body {
   height: 100%;
 }
 #title {
-  color: white;
+  color: rgb(70, 187, 105);
   font-size: 4rem;
   cursor: default;
-  font-weight: lighter;
+  font-weight: 300;
 }
 #tagline {
-  color: white;
+  color: rgb(70, 187, 105);
   font-size: 1.5rem;
-  font-weight: lighter;
+  font-weight: 300;
   cursor: default;
+  position: relative;
+  left: 5rem;
 }
 .firstLetter {
   color: rgb(8, 80, 1);
@@ -176,7 +185,7 @@ input[type="number"]::-webkit-outer-spin-button {
   padding: 20px;
   margin-top: 70px;
   object-fit: contain;
-  box-shadow: inset 8px 10px 8px rgba(0, 0, 0, 0.6);
+  /* box-shadow: inset 8px 10px 8px rgba(0, 0, 0, 0.6); */
   border-radius: 10px;
 }
 .phone {
@@ -184,7 +193,6 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-top: 3rem;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: inset 8px 10px 8px rgba(0, 0, 0, 0.6);
 }
 .phone h2 {
   color: rgb(255, 255, 255);
@@ -195,4 +203,46 @@ input[type="number"]::-webkit-outer-spin-button {
   color: rgb(0, 0, 0);
   font-size: 27px;
   font-weight: lighter;
+}
+#iframe {
+  width: 600px;
+  height: 450px;
+  border-radius: 20px;
+}
+.navspan {
+  font-weight: bolder !important;
+  color: #1ce026;
+}
+@media (max-width: 600px) {
+  #title {
+    font-size: 25px;
+  }
+  #tagline {
+    font-size: 15px;
+  }
+  #about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .phone h2 {
+    font-size: 20px;
+  }
+  .phone h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .phone,
+  .formBox,
+  #iframe {
+    width: auto;
+    height: auto;
+  }
+  #tagline {
+    position: static;
+  }
+  .hero {
+    clip-path: ellipse(130% 80% at 78.86% 0%);
+  }
 }

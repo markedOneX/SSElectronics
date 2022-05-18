@@ -71,7 +71,7 @@ function FormBox() {
           </div>
           <div className="form-group">
             <label htmlFor="exampleFormControlSelect1" className="labels">
-              There'something wrong with -
+              There'something wrong with
             </label>
             <select
               defaultValue={"Choose One"}
@@ -90,7 +90,7 @@ function FormBox() {
 
           <div className="form-group">
             <label htmlFor="exampleFormControlTextarea1" className="labels">
-              Please tell us more about the problem.
+              Tell us more about the problem
             </label>
             <textarea
               className="form-control shadow"
@@ -100,7 +100,7 @@ function FormBox() {
             ></textarea>
           </div>
           <div className="form-group">
-            <button className=" btn btn-success shadow" type="submit">
+            <button type="submit" className="btn btn-success shadow">
               Submit
             </button>
           </div>

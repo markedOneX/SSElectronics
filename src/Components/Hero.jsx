@@ -12,7 +12,7 @@ function Hero() {
             <span className="firstLetter"> E</span>lectronics
           </h1>
           <h3 id="tagline">
-            <i>Everything that is broken can be fixed!</i>
+            <i>Why fix it yourself? Leave it to the pros.</i>
           </h3>
         </div>
       </div>

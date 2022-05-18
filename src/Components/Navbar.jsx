@@ -1,18 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../Design/logonew.png";
 
 function Navbar() {
   return (
     <>
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
-          <Link to="/" hre className="navbar-brand">
-            <img
+          <Link
+            to="/"
+            hre
+            className="navbar-brand"
+            style={{ fontSize: "15px", fontWeight: "lighter" }}
+          >
+            {/* <img
               src={logo}
               alt="S S E"
               style={{ width: "200px", height: "fit-content" }}
-            />
+            /> */}
+            <span className="navspan">S</span>hree{" "}
+            <span className="navspan">S</span>ai{" "}
+            <span className="navspan">E</span>lectronics
           </Link>
           <button
             className="navbar-toggler"
