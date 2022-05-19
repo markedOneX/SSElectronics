@@ -10,13 +10,8 @@ function Navbar() {
             to="/"
             hre
             className="navbar-brand"
-            style={{ fontSize: "15px", fontWeight: "lighter" }}
+            style={{ fontSize: "20px", fontWeight: "lighter" }}
           >
-            {/* <img
-              src={logo}
-              alt="S S E"
-              style={{ width: "200px", height: "fit-content" }}
-            /> */}
             <span className="navspan">S</span>hree{" "}
             <span className="navspan">S</span>ai{" "}
             <span className="navspan">E</span>lectronics

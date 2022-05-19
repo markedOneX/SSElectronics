@@ -100,7 +100,12 @@ function FormBox() {
             ></textarea>
           </div>
           <div className="form-group">
-            <button type="submit" className="btn btn-success shadow">
+            <button
+              onTouchStart={handleSubmit}
+              type="submit"
+              className="btn btn-success"
+              style={{ zIndex: "99", cursor: "pointer" }}
+            >
               Submit
             </button>
           </div>

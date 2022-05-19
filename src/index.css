@@ -8,7 +8,15 @@ body {
   font-family: "Dongle", sans-serif;
   font-family: "Montserrat", sans-serif;
   font-family: "Outfit", sans-serif;
-  background: linear-gradient(90deg, #1ce026 0%, #000851 100%);
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004779,
+    #007996,
+    #00ab78,
+    #02d600
+  );
+  /* background: linear-gradient(90deg, #1ce026 0%, #000851 100%); */
 }
 /* #1ce026 */
 /* --------------HERO------------------ */
@@ -17,12 +25,13 @@ body {
   box-sizing: border-box;
   height: 500px;
   background: rgb(95, 235, 12);
-  background: linear-gradient(
-    146deg,
-    rgba(95, 235, 12, 1) 0%,
-    rgba(151, 242, 100, 1) 10%,
-    rgba(255, 255, 255, 1) 91%,
-    rgba(255, 255, 255, 1) 100%
+  background-image: linear-gradient(
+    to left bottom,
+    #eaeaea,
+    #d4ecff,
+    #9af6ff,
+    #73fde6,
+    #9ffb9f
   );
   /* #32e32c */
   clip-path: ellipse(92% 100% at 78.86% 0%);
@@ -36,22 +45,29 @@ body {
   height: 100%;
 }
 #title {
-  color: rgb(70, 187, 105);
+  color: rgb(32, 145, 65);
   font-size: 4rem;
   cursor: default;
   font-weight: 300;
 }
 #tagline {
-  color: rgb(70, 187, 105);
+  color: rgb(32, 145, 65);
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 350;
   cursor: default;
   position: relative;
   left: 5rem;
 }
+.infoAbt {
+  text-align: center;
+  color: whitesmoke;
+  font-weight: 400;
+}
+
 .firstLetter {
   color: rgb(8, 80, 1);
   opacity: 0.8;
+  font-weight: 325;
 }
 
 /* ----------Navbar--------------- */
@@ -68,10 +84,19 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
 }
+
 #about p {
   width: 20rem;
   color: white;
-  word-break: break-all;
+  word-break: normal;
+}
+#about a {
+  text-decoration: none;
+  color: rgb(45, 245, 105);
+  font-weight: bold;
+}
+#about a:hover {
+  text-decoration: underline;
 }
 
 #img {
@@ -80,6 +105,7 @@ h3 {
 
 .navbar-brand {
   cursor: pointer;
+  font-size: large;
 }
 .nav-link {
   display: inline-block;
@@ -118,7 +144,8 @@ h3 {
   padding-top: 3.5rem;
 }
 .box {
-  filter: drop-shadow(0 0 0.75rem rgba(57, 247, 40, 0.637));
+  /* filter: drop-shadow(0 0 0.75rem rgba(57, 247, 40, 0.637)); */
+  filter: drop-shadow(0 0 0.75rem rgba(37, 233, 217, 0.76));
 }
 /* ---------------FORM-------------- */
 .formBox,
@@ -213,6 +240,7 @@ input[type="number"]::-webkit-outer-spin-button {
   font-weight: bolder !important;
   color: #1ce026;
 }
+
 @media (max-width: 600px) {
   #title {
     font-size: 25px;
@@ -225,6 +253,10 @@ input[type="number"]::-webkit-outer-spin-button {
     justify-content: center;
     align-items: center;
   }
+  #about p {
+    width: auto;
+  }
+
   .phone h2 {
     font-size: 20px;
   }
@@ -245,4 +277,7 @@ input[type="number"]::-webkit-outer-spin-button {
   .hero {
     clip-path: ellipse(130% 80% at 78.86% 0%);
   }
+  /* .formBox {
+    display: none;
+  } */
 }

@@ -1,30 +1,39 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import portrait from "../Design/portrait2.jpg";
 
 function About() {
   return (
     <div>
-      <h2 className="aboutwhite">About Us</h2>
-      <h3>26 Years of Trust and Excellence...</h3>
+      <h2 className="aboutwhite abttext">About Us</h2>
+      <h3 className="abttext">25+ Years of Trust and Excellence</h3>
       <div id="about">
         <div>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non,
-            mollitia. Dolor sed eius quidem vero error, consectetur
-            necessitatibus. Odio iste deleniti maxime sunt ad excepturi
-            officiis, animi dicta neque quasi! Nesciunt qui ipsum ex rerum
-            laudantium odit quas culpa ratione placeat unde molestiae hic,
-            aliquam nostrum similique ipsam quo minus corporis repellendus atque
-            repudiandae facere esse quisquam fugiat excepturi. Nostrum! Iure,
-            distinctio fugit placeat totam recusandae a dolorum
+            Founded in 1994, Shree Sai Electronics is the pioneer in the
+            electronics and repairing industry in Sangli district. We are still
+            standing tall and serving the city with extensive constitution.
+            Building trust among our customers and providing them with finest
+            quality of service has always been our primary goal. Let us serve
+            you too by fixing your hardware. Find out more about the{" "}
+            <span>
+              <Link to="/services">Services</Link>
+            </span>{" "}
+            we provide or get in{" "}
+            <span>
+              <Link to="/contact">Contact</Link>
+            </span>{" "}
+            with us to know more.
           </p>
         </div>
-        <div>
-          <img
-            id="img"
-            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-            width="200"
-            alt=""
-          />
+        <div className="portrait">
+          <div>
+            <img id="img" src={portrait} width="200" alt="" />
+          </div>
+          <div>
+            <h5 className="infoAbt">Girish Adke</h5>
+            <h6 className="infoAbt">Founder, Shree Sai Electronics</h6>
+          </div>
         </div>
       </div>
     </div>

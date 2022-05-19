@@ -5,7 +5,11 @@ function Card({ title, desc, src }) {
   return (
     <div>
       <div className="card mx-auto" id="card">
-        <img src={src} className="card-img-top" alt="Image" />
+        <img
+          src={src}
+          className="card-img-top"
+          alt="Images will display here"
+        />
         <div className="card-body d-flex flex-column">
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{desc}</p>
