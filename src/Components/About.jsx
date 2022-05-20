@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import portrait from "../Design/portrait2.jpg";
+import portrait from "../Design/Portrait.jpg";
 
 function About() {
   return (
